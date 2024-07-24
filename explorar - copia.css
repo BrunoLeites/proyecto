@@ -1,0 +1,479 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+background-color: rgba(0, 0, 0, 0.849) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100svh;
+}
+
+.container {
+    width: 90%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    /* align-items: center; */
+
+}
+
+
+
+header {
+    background-color: #3333339a;
+    color: #fff
+    padding 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: 30%;
+
+    
+}
+main{
+    position: relative;
+    height: 30%;
+}
+
+.logo {
+    height: 300px;
+    margin-right: 50%;
+    margin-left: 50%;
+    display: block;
+    width: 300px;
+    align-items: center;
+
+}
+
+nav ul {
+    margin: 0;
+    list-style: none;
+
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    
+}
+
+.user-logo {                          
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    /* position: absolute; */
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    bottom: 2rem;
+    right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.carrito-logo{
+
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    /* position: absolute; */
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    bottom: 2rem;
+    right: 1rem;
+    height: 22px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.spacer {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+
+
+
+.hero {
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+
+
+}
+
+.hero h2 {
+    margin-bottom: 20px;
+}
+
+.productos{
+    margin-top: 50px;
+    width:80%;
+    height: 60%;
+
+    
+display: grid;
+gap:1rem;
+grid-template-columns: repeat(4,400px);
+grid-template-rows: repeat(3,400px);
+justify-content: center;
+
+}
+
+.productos>div{
+    width: auto;
+    height: auto;
+    background-image: url(recursos/fondo.jpg);
+    border-color: #aaaaaa46;
+    border-width: 1px;
+    border-style: solid;
+    opacity: 75%;
+}
+
+.productos>div:hover {
+    width: auto;
+    height: auto;
+    background-image: url(recursos/fondo.jpg);
+    border-color: #aaaaaa46;
+    border-width: 1px;
+    border-style: solid;
+    opacity: 100%;
+    cursor: pointer;
+    scale: 1.05;
+    
+}
+
+.foto-producto{
+    margin-left: 40px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 100px;
+   
+    font-size: 24px;
+    color: #fff;
+    padding: 30px 60px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid white;
+    transition: background-color .3s ease;
+    
+    
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+
+.flechas{
+
+}
+.flechitas{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+footer {
+    background-color: #3333339a;
+    color: #fff;
+    padding:  10px;
+    text-align: center;
+    margin-bottom: 0%;
+    height: 5%;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* MENU DESPLEGABLE*/
+
+body {
+    overflow-x: hidden;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+.header {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+    position: fixed;
+    height: 60px !important;
+    overflow: hidden;
+    z-index: 10;
+}
+.main {
+    margin: 0 auto;
+    display: block;
+    height: 100%;  
+    margin-top: 60px;
+}
+.mainInner {
+    display: table;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.mainInner div {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 1.25px;
+}
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    z-index: 300;
+    left: 0;
+    width: 250px;
+    margin-top: 60px;
+    transform: translateX(-250px);
+    transition: transform 250ms ease-in-out;
+    background-color: rgba(0, 0, 0, 0);
+}
+.sidebarMenuInner {
+    margin: 0;
+    padding: 0;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+
+}
+.sidebarMenuInner li {
+    list-style: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+.sidebarMenuInner li span {
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.50);
+}
+.sidebarMenuInner li a { 
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+input[type="checkbox"]:checked~#sidebarMenu {
+    transform: translateX(0);
+}
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+.sidebarIconToggle {                            /*BOTON DE MENU DESPLEGABLE*/
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    bottom: 2rem;
+    left: 15px;
+    height: 22px;
+    width: 22px;
+}
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    margin: 2px 0;
+}
+ .horizontal, .diagonal.part-1, .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+} 
+ .diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+} 
+ input[type=checkbox]:checked~.sidebarIconToggle>.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+} 
+/*FIN DE MENU DESPLEGABLE*/ 
+
+/*CATALOGO*/
+main {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.product {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.product h2 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color:#fff;
+}
+
+.foto-producto
+
+.price {
+    font-weight: bold;
+    color: #d6d6d6;
+}
+
+.description {
+    margin-top: 10px;
+    color: #fff;
+}
+
+
+
+button:hover {
+    background-color: #333;
+
+}
+/*FIN DE CATALOGO*/
+
+
+nav ul li {
+    /* position: relative; */
+    height: 100%;
+    
+}
+nav ul li:hover {
+    /* position: relative; */
+    height: 100%;
+    
+    
+}
+
+
+nav ul {
+    height: 100%;
+
+}
+
+nav {
+    height: 3rem;
+}
+
+li ul {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    color: black;
+    height: 24rem;
+    opacity: 0;
+    bottom: -24rem;
+    margin-top: -2rem;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    transition: opacity 1s ease, transform 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    /* transform: translateY(-10rem); */
+}
+
+li:hover > ul {
+    opacity: 1;
+ 
+    visibility: visible;
+    transform: translateY(0);
+   
+} 
+
+.btnLogin-popup{
+    width: 8rem;
+    height: 2rem;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+
